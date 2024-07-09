@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">APP</string>
+
+    <string name="TxtBienvenido">Bienvenido</string>
+
+    <string name="invalid_email">Ingrese un email valido</string>
+    <string name="invalid_password">Error en contraseña</string>
+
+    <string name="EtxtEmail">Email</string>
+    <string name="EtxtPassword">Contraseña</string>
+    <string name="Txtnombre">Nombre:</string>
+    <string name="tipo_de_reporte">Tipo de Reporte</string>
+    <string name="Etxtnombre">Nombre</string>
+    <string name="Txt_cesion_iniciada_con_exito">Cesion iniciada con exito</string>
+    <string name="Btn_cerrar_sesion">Cerrar Sesion</string>
+    <string name="Btn_new_reporte">New Reporte</string>
+    <string name="age">Age</string>
+    <string name="Txtsex">Sex</string>
+    <string name="Txt_cojer_a">Cojer a:</string>
+    <string name="Etxt_a_quien_cojer">A quien cojer</string>
+    <string name="Etxt_con_quien_coger">Con quien coger?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="correo">CORREO</string>
+    <string name="add">ADD</string>
+    <string name="correos_agreados">Correos Agreados</string>
+    <string name="sieteltda_hotmail_com">sieteltda@hotmail.com</string>
+
+</resources>

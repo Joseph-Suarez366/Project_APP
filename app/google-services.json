@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "351190352104",
+    "firebase_url": "https://mi-primera-app-45745-default-rtdb.firebaseio.com",
+    "project_id": "mi-primera-app-45745",
+    "storage_bucket": "mi-primera-app-45745.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351190352104:android:20ccd087f7bd6aec29495d",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvoWefkH22sVMl3k_ZhOpzPIayMcXu4do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351190352104:android:1b1555beb6a0f5bc29495d",
+        "android_client_info": {
+          "package_name": "com.example.iniciosecion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvoWefkH22sVMl3k_ZhOpzPIayMcXu4do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

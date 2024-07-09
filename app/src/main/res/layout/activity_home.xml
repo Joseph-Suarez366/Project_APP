@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9acef8"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:background="#ffffff"
+        android:text="@string/Txt_cesion_iniciada_con_exito"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <Button
+        android:id="@+id/BtnLout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/Btn_cerrar_sesion" />
+
+
+    <Button
+        android:id="@+id/BtnReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/Btn_new_reporte" />
+
+    <Button
+        android:id="@+id/BtnBorrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Borrar Reportes" />
+
+    <Button
+        android:id="@+id/BtnGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Obtener reporte" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/VistaPrevia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="Rep1"
+        android:visibility="gone"
+        app:cardCornerRadius="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/tipo_de_reporte"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Txtname"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Txtnombre"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/Etxtname"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TxtAge"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/age"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/Etxtage"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Txtsex"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Txtsex"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/Etxtsex"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Txtcqc"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Txt_cojer_a"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/Etxtcqc"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Txtedad"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/age"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/Etxtedad"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/VistaPrevia1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="Rep1"
+        android:visibility="gone"
+        app:cardCornerRadius="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/tipo_de_reporte"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Txtname1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Txtnombre"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/Etxtname1"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/Txtnombre"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TxtAge1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/age"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/Etxtage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/age"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Txtsex1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Txtsex"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/Etxtsex1"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/Txtsex"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Txtcqc1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Txt_cojer_a"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/Etxtcqc1"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/Txt_cojer_a"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Txtedad1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/age"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/Etxtedad1"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/age"></TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/EtxtMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="432dp"
+        android:ems="10"
+        android:visibility="gone"
+        android:gravity="start|top"
+        android:hint="Multilinia"
+        android:inputType="textMultiLine" />
+
+
+</LinearLayout>
