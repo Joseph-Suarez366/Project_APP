@@ -1,1 +1,1 @@
-Este es mi readi
+Esa es un aplicacion para realizar reporte de manteniemnto de equipos
